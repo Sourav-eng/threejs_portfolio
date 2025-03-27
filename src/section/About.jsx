@@ -1,5 +1,6 @@
 import React from 'react'
 import Globe from 'react-globe.gl'
+import Button from '../section/Button'
 
 const About = () => {
     return (
@@ -38,18 +39,27 @@ const About = () => {
                                 width={326}
                                 showAtmosphere
                                 backgroundImageOpacity={0.5}
-                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-nig.jpg"
+                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                                 backgroundColor="rgba(0,0,0,0)"
-                                labelData={[
+                                labelsData={[
                                     {
-                                        lat: 40, lng: -100,
-                                        text: 'Hi I am here!',
+                                        lat: 26, lng: 80,
+                                        text: 'Hello there! I am here',
                                         color: 'white',
-                                        size: 20
+                                        size: 2
                                     }
                                 ]}
                             />
+                        </div>
+                        <div>
+                        <p className='grid-headtext'>
+                                I can work remotely fom any timezones.
+                            </p>
+                        <p className='grid-subtext'>
+                                I based in India, with remote work avaiable 
+                            </p>
+                            <Button name='Contact Me' isBean containerClass= 'w-fit mt-10'/>
                         </div>
                     </div>
                 </div>
