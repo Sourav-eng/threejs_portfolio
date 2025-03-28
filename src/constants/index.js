@@ -59,7 +59,7 @@ export const navLinks = [
   export const myProjects = [
     {
       title: 'Spotify Clone- A Music Listening App',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      desc: 'Spotify Clone is a Software-as-a-Service platform that transforms the way listen music, create your own albums. mplemented features such as play/pause, next/previous track navigation, volume control, and a progress bar',
       subdesc:
         'Built as a unique Software-as-a-Service app with Html, CSS, JavaScript,  App is designed for optimal performance and scalability.',
       href: 'https://github.com/Sourav-eng/Spotify-clone',
@@ -79,19 +79,15 @@ export const navLinks = [
         },
         {
           id: 2,
-          name: 'TailwindCSS',
+          name: 'CSS',
           path: 'assets/tailwindcss.png',
         },
         {
           id: 3,
-          name: 'TypeScript',
+          name: 'JavaScript',
           path: '/assets/typescript.png',
         },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        
       ],
     },
     {
