@@ -14,18 +14,7 @@ import HeroCamera from '../section/HeroCamera'
 import Button from '../section/Button'
 
 const Hero = () => {
-    // const x = useControls('HackerRoom', {
-    //     positionX: { value: 2.5, min: -10, max: 10 },
-    //     positionY: { value: 2.5, min: -10, max: 10 },
-    //     positionZ: { value: 2.5, min: -10, max: 10 },
 
-    //     rotationX: { value: 0, min: -10, max: 10 },
-    //     rotationY: { value: 0, min: -10, max: 10 },
-    //     rotationZ: { value: 0, min: -10, max: 10 },
-
-    //     scale: { value: 1, min: 0.1, max: 10 }
-
-    // });
     const isMobile = useMediaQuery({ maxWidth: 768 })
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
     const isSmall = useMediaQuery({ maxWidth: 440 })
@@ -54,10 +43,7 @@ const Hero = () => {
                                     scale={Sizes.deskScale}
                                     position={Sizes.deskPosition}
                                     rotation={[0, -Math.PI, 0]}
-                                // position={[x.positionX, x.positionY, x.positionZ]}
-                                // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
-                                // scale={[x.scale, x.scale, x.scale]}
-
+                             
                                 />
 
                             </HeroCamera>
@@ -82,7 +68,7 @@ const Hero = () => {
                     </Canvas>
                 </div>
                 <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
-                    <a href="contact " className='w-fit'><Button name='Lets Work Together' isBean containerClass='sm:w-fit w-full sm:min-w-96px' /></a>
+                    <a href="#about " className='w-fit'><Button name='Lets Work Together' isBean containerClass='sm:w-fit w-full sm:min-w-96px' /></a>
                 </div>
 
             </div>
