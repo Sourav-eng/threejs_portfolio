@@ -19,26 +19,27 @@ const Contact = () => {
                 'template_p0g8i6u', {
                 form_name: form.name, to_name: 'Sourav',
                 from_email: form.email,
-                to_email: 'souravnishad420@gmail.com'
-            }
+                to_email: 'souravnishad420@gmail.com',
+                message: 'from.message'
+            }, '2MZgBgsioC-yzpiC9'
             )
             setLoading(false)
             alert("Your message has been sent!")
-            setform({name: '', email: '', message: '' })
+            
+            setform({ name: '', email: '', message: '' })
         }
 
         catch (error) {
+            setLoading(false)
             console.error();
             alert('Something Went Wrong')
 
         }
 
-
-
     }
 
     return (
-        <section className='c-space my-20'>
+        <section id='contact'className='c-space my-20'>
             <div className=' min-h-screen flex items-center justify-center flex-col relative'>
                 <img src="/assets/terminal.png" alt="terminal-background" className='absolute inset-0 min-h-screen' />
                 <div className='contact-container'>

@@ -19,14 +19,15 @@ const Projects = () => {
     });
   };
 
-//   useGSAP(() => {
-//     gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
-//   }, [selectedProjectIndex]);
+  // useGSAP(() => {
+  //   gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
+  // }, [selectedProjectIndex]);
 
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id='work'>
+
       <p className="head-text">My Work</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">

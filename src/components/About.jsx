@@ -5,7 +5,7 @@ import Button from '../section/Button'
 const About = () => {
     const [hasCopied, sethasCopied]= useState(false)
     function handleCopy(){
-        navigator.clipboard.writeText('nishadsourav0@gmail.com')
+        navigator.clipboard.writeText('souravnishad429@gmail.com')
         sethasCopied(true)
         setTimeout(() => {
           sethasCopied(false)
@@ -13,12 +13,14 @@ const About = () => {
         )
     }
     return (
+      
         <section className='c-space my-20' id='about'>
             <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 gap-5 h-full'>
                 <div className="col-span-1 xl:row-span-3">
                     <div className='grid-container'>
                         <img src="/assets/grid1.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain' />
                         <div>
+                       
                             <p className='grid-headtext'>Hello, I am Sourav</p>
                             <p className='grid-subtext'>
                                 A passionate web developer with expertise in HTML, CSS, JavaScript, and backend technologies like Node.js.
@@ -44,12 +46,15 @@ const About = () => {
                     <div className='grid-container'>
                         <div className='rounded-3xl w-full h-fit flex sm:h-[326px] justify-center items-center'>
                             <Globe
+
+
+
                                 height={326}
                                 width={326}
                                 showAtmosphere
                                 backgroundImageOpacity={0.5}
-                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                               globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                             bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                                 backgroundColor="rgba(0,0,0,0)"
                                 labelsData={[
                                     {

@@ -5,7 +5,7 @@ import { navLinks } from '../constants/index'
 
 const NAvitem = () => {
     return (
-        <ul className='nav-ul'>
+        <ul className='nav-ul '>
             {navLinks.map(({ id, name, href }) => (
                 <li key={id} className='nav-li'>
                     <a href={href} className='nav-li-a' onClick={() => {
@@ -34,17 +34,17 @@ const Navbar = () => {
             <div className='max-w-[1280px]  flex justify-between items-center py-5 mx-auto c-space'>
 
                 {/* <div className="flex justify-between "></div> */}
-                <a className='text-neutral-400 font-bold text-xl hover:text-white transition-colors' href="/">Checkout this</a>
+                <a className='text-neutral-400 font-bold text-xl hover:text-white transition-colors hover:underline' href="/">MY Portfolio</a>
 
                 <button onClick={ToggleMenu} className='text-neutral-400 hover:text-white focus:outline-none sm:hidden flex ' aria-label='ToggleMenu'>
                     <img className='w-6 h-6' src={isopen ? "/assets/close.svg" : "/assets/menu.svg"} alt="toggle" />
                 </button>
-                <nav className='hidden sm:flex'>
+                <nav className='hidden sm:flex ' >
                     <NAvitem />
                 </nav>
 
             </div>
-            <div className={`nav-sidebar overflow-hidden transition-all duration-300 ease-in-out ${isopen ? 'max-h-[500px]' : 'max-h-0'}`}>
+            <div className={`nav-sidebar  overflow-hidden transition-all duration-300 ease-in-out ${isopen ? 'max-h-[500px]' : 'max-h-0'}`}>
                 <nav className='p-5'>
                     <NAvitem />
                 </nav>
