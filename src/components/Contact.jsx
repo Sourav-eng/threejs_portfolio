@@ -15,13 +15,14 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true)
         try {
-            await emailjs.send('service_l8a2tbm',
+            await emailjs.send('service_22cpzbq',
                 'template_p0g8i6u', {
-                form_name: form.name, to_name: 'Sourav',
+                form_name: form.name,
+                to_name: 'Sourav',
                 from_email: form.email,
-                to_email: 'souravnishad420@gmail.com',
-                message: 'from.message'
-            }, '2MZgBgsioC-yzpiC9'
+                to_email: 'souravnishad429@gmail.com',
+                message: form.message
+            }, 'MEARLFLekmq5paXUO'
             )
             setLoading(false)
             alert("Your message has been sent!")
@@ -30,11 +31,11 @@ const Contact = () => {
         }
 
         catch (error) {
-            setLoading(false)
-            console.error();
-            alert('Something Went Wrong')
-
+            setLoading(false);
+            console.error("Email sending error:", error);
+            alert('Something Went Wrong');
         }
+        
 
     }
 
@@ -62,7 +63,7 @@ const Contact = () => {
                         <label className='space-y-3'>
                             <span className='field-label'>Email</span>
                             <input type="text" name='email' value={form.email} onChange={handleChange} required
-                                className='field-input' placeholder='souravnishad429@gamil.com' />
+                                className='field-input' placeholder='souravnishad429@gmail.com' />
                         </label>
 
                         <label className='space-y-3'>

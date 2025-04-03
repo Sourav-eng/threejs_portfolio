@@ -3,24 +3,24 @@ import Globe from 'react-globe.gl'
 import Button from '../section/Button'
 
 const About = () => {
-    const [hasCopied, sethasCopied]= useState(false)
-    function handleCopy(){
+    const [hasCopied, sethasCopied] = useState(false)
+    function handleCopy() {
         navigator.clipboard.writeText('souravnishad429@gmail.com')
         sethasCopied(true)
         setTimeout(() => {
-          sethasCopied(false)
+            sethasCopied(false)
         }, 2000
         )
     }
     return (
-      
+
         <section className='c-space my-20' id='about'>
             <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 gap-5 h-full'>
                 <div className="col-span-1 xl:row-span-3">
                     <div className='grid-container'>
                         <img src="/assets/grid1.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain' />
                         <div>
-                       
+
                             <p className='grid-headtext'>Hello, I am Sourav</p>
                             <p className='grid-subtext'>
                                 A passionate web developer with expertise in HTML, CSS, JavaScript, and backend technologies like Node.js.
@@ -53,8 +53,8 @@ const About = () => {
                                 width={326}
                                 showAtmosphere
                                 backgroundImageOpacity={0.5}
-                               globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                             bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                                 backgroundColor="rgba(0,0,0,0)"
                                 labelsData={[
                                     {
@@ -73,7 +73,8 @@ const About = () => {
                             <p className='grid-subtext'>
                                 I based in India, with remote work avaiable
                             </p>
-                            <Button name='Contact Me' isBean containerClass='w-full mt-10' />
+                            <a href="#contact">
+                                <Button name='Contact Me' isBean containerClass='w-full mt-10' /></a>
                         </div>
                     </div>
                 </div>
@@ -92,11 +93,11 @@ const About = () => {
                         <img className='w-full h-fit sm:h-[276px] object-contain sm:object-top' src="assets/grid4.png" alt="grid-4" />
                         <div className='space-y-2'>
                             <p className='grid-subtext text-center'>
-                                Contact Me 
+                                Contact Me
                             </p>
                             <div className='copy-container' onClick={handleCopy}>
-                                <img src={hasCopied? 'assets/tick.svg': 'assets/copy.svg'} alt="copy" />
-                                <p className='lg:text-2xl md:text-xl font-medium text-grey_gradient text-white'> 
+                                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
+                                <p className='lg:text-2xl md:text-xl font-medium text-grey_gradient text-white'>
                                     nishadsourav0@gmail.com
                                 </p>
                             </div>
