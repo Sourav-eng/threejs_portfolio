@@ -43,7 +43,7 @@ I wanted to move beyond a traditional portfolio and use my JavaScript and Three.
 
 If you'd like to connect, collaborate, or just say hi:
 
-- 📧 Email: your-email@example.com  
+- 📧 Email: nishadsourav0@.com  
 - 🌐 Website: https://your-portfolio-link.com  
 - 💼 LinkedIn: https://linkedin.com/in/yourprofile  
 - 🐙 GitHub: https://github.com/yourusername
