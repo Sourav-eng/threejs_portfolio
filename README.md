@@ -23,6 +23,9 @@ Welcome to my interactive 3D portfolio website! Built using [Three.js](https://t
 - [GSAP](https://greensock.com/gsap/) – Animation library
 - Webpack – Build tool and bundler
 
+## 🎥 Demo
+[Watch the demo](https://github.com/Sourav-eng/Spotify-clone/issues/1#issue-2937343994)
+
 
 ## 🧑‍🎨 Inspiration
 
