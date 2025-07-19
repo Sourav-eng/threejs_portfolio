@@ -24,7 +24,7 @@ Welcome to my interactive 3D portfolio website! Built using [Three.js](https://t
 - Webpack – Build tool and bundler
 
 ## 🎥 Demo
-[Watch the demo](https://github.com/Sourav-eng/Spotify-clone/issues/1#issue-2937343994)
+[Watch the demo](https://github.com/Sourav-eng/threejs_portfolio/issues/1#issue-3244899368)
 
 
 ## 🧑‍🎨 Inspiration
